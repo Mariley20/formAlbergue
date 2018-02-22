@@ -1,6 +1,10 @@
+body {
+    
+}
 .form-albergue{
     width: 400px;
     margin: 0 auto;
+    /* border: 1px solid #2517e7 */
 }
 .title {
     text-transform: uppercase;
