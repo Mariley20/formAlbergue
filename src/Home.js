@@ -2,21 +2,48 @@ import React, {Component} from 'react';
 // import Utils from './Utils.js';
 
 import {BrowserRouter, Route, Switch, NavLink, Redirect} from 'react-router-dom'
-import {Row, Col} from 'react-bootstrap';
+import {Row, Col, Alert} from 'react-bootstrap';
 const Home = () => {
     return (
         <div>
-            <h1>Registra un Albergue</h1>
+            <h2>Registra un Albergue</h2>
+            <Alert bsStyle="info">
+                <strong>Estas a cargo de un Albergue y/o refugio!</strong> Tomaremos tus datos para contactar
+            </Alert>;
             <form className="form-group">
                 <Col xs={12}>
-                    <div class="input-group">
+                    <div className="input-group">
                         <label>Nombre del Albergue</label>
-                        {/* <div class="input-group-btn"> </div> */}
-                        <input type="text" class="form-control" aria-label="..."/>
+                        {/* <div className="input-group-btn"> </div> */}
+                        <input type="text" className="form-control" aria-label="..."/>
                     </div>
                 </Col>
-                <Col xs={12}></Col>
-                <Col xs={12}></Col>
+                <Col xs={12}>
+                    <div className="input-group">
+                        <label>Tel./ Cel.</label>
+                        {/* <div className="input-group-btn"> </div> */}
+                        <input type="tel" className="form-control" aria-label="..."/>
+                    </div>                
+                </Col>
+                <Col xs={12}>
+                    <div className="input-group">
+                        <label>Direccion</label>
+                        {/* <div className="input-group-btn"> </div> */}
+                        <input type="text" className="form-control" aria-label="..."/>
+                    </div>                
+                </Col>
+                <Col xs={12}>
+                    <div className="input-group">
+                        <label>Distrito/Provincia/Región</label>
+                        {/* <div className="input-group-btn"> </div> */}
+                        <input type="tel" className="form-control" aria-label="..."/>
+                    </div>                
+                </Col>
+                <Col xs={12}>
+                    <div className="input-group">
+                        <button type='submit' className='btn btn-primary'>Registrar</button>
+                    </div> 
+                </Col>
             </form>
         </div>
     )
