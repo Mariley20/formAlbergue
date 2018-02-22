@@ -19,7 +19,7 @@ const App = ({ selected }) => {
                 <Switch>
                     <Route path="/home" render={() => <Home />} />
                     {/* <Route path = "/details" render = { () => <Details NavBar={NavBar} Information={Information}/>} /> */}
-                    <Route path='/plantilla' render={() => <Redirect to="/home" />} />
+                    <Route path='/formAlbergue' render={() => <Redirect to="/home" />} />
                     <Route exact path="/" render={() => <Home />} />
                 </Switch>
             </HashRouter>
