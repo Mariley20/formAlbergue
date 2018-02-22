@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
 // import Utils from './Utils.js';
-
 import {BrowserRouter, Route, Switch, NavLink, Redirect} from 'react-router-dom'
 import {Row, Col, Alert} from 'react-bootstrap';
+import './style.css';
 const Home = () => {
     return (
-        <div>
-            <h2>Registra un Albergue</h2>
+        <div className='form-albergue'>
+            <h2 className='title'>Registra un Albergue</h2>
             <Alert bsStyle="info">
                 <strong>Estas a cargo de un Albergue y/o refugio!</strong> Tomaremos tus datos para contactar
-            </Alert>;
+            </Alert>
             <form className="form-group">
                 <Col xs={12}>
                     <div className="input-group">

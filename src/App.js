@@ -14,7 +14,6 @@ import Home from './Home';
 
 const App = ({ selected }) => {
     return (
-        <div>
             <HashRouter>
                 <Switch>
                     <Route path="/home" render={() => <Home />} />
@@ -23,7 +22,6 @@ const App = ({ selected }) => {
                     <Route exact path="/" render={() => <Home />} />
                 </Switch>
             </HashRouter>
-        </div>
     )
 }
 const mapToProps = ({ selected }) => ({ selected });
